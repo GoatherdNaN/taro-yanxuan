@@ -1,0 +1,19 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.fixed {
+  bottom: 0;
+  /* 在H5模式下将会编译成 margin-bottom: 50px，在小程序模式下则会忽略*/
+  margin-bottom: taro-tabbar-height;
+}

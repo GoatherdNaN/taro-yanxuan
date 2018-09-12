@@ -1,0 +1,57 @@
+// @import "../../iconfont/iconfont.wxss";
+
+
+.my {
+  .myinfo {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 0 30px;
+    box-sizing: border-box;
+    img, image {
+      height: 148px;
+      width: 148px;
+      border-radius: 50%
+    }
+    &-box {
+      margin-left: 30px;
+      .nickname {
+        color: #fff;
+        font-size: 34px;
+        margin-bottom: 10px;
+        &.user-flag {
+          display: block;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+  .iconlist {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    flex-wrap: wrap;
+    .icon-item {
+      width: 33.33%;
+      padding: 50px 0;
+      text-align: center;
+      border-right: 1px solid rgba(0, 0, 0, .15);
+      border-bottom: 1px solid rgba(0, 0, 0, .15);
+      box-sizing: border-box;
+      .icon-info {
+        display: block;
+        font-size: 30px;
+      }
+      &.iconfont {
+        margin-bottom: 10px;
+        font-size: 34px;
+
+      }
+      &:nth-of-type(3n+3) {
+        border-right: none;
+      }
+    }
+  }
+}
