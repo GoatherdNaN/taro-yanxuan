@@ -225,8 +225,8 @@ class Index extends Component {
                       </View>
                     ))
                   }
-                  <View onClick={this.categoryList.bind(this,item.id)}>
-                    <View className='last'>
+                  <View className='last' onClick={this.categoryList.bind(this,item.id)}>
+                    <View className='last-content'>
                       <Text className='last-title'>{item.name}好物</Text>
                       <View className='icon'></View>
                     </View>

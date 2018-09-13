@@ -1,316 +1,322 @@
 .index {
-  width: 100%;
-  overflow: hidden;
-  background-color: #F4F4F4;
-  .swiper {
     width: 100%;
-    height: 417px;
-    .swiper-container {
-      width: 100%;
-      height: 100%;
-      .swiper-item {
+    overflow: hidden;
+    background-color: #F4F4F4;
+    .swiper {
         width: 100%;
-        .slide-image {
-          width: 100%;
-        }
-      }
-    }
-  }
-  .channel {
-    display: flex;
-    padding: 20px 0;
-    background: #ffffff;
-    .channel-item {
-      width: 25%;
-      text-align: center;
-      .channel-name {
-        font-size: 28px;
-        display: block;
-      }
-      image, img {
-        height: 56px;
-        width: 56px;
-        display: inline-block;
-      }
-    }
-  }
-  .brand {
-    width: 100%;
-    margin-top: 20px;
-    background: #ffffff;
-    .head {
-      text-align: center;
-      padding: 40px 0;
-    }
-    .content {
-      width: 730px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      .brand-item {
-        width: 360px;
-        height: 235px;
-        margin-bottom: 10px;
-        position: relative;
-        &-text {
-          position: absolute;
-          top: 0;
-          left: 0;
-          padding: 10px;
-          &-name {
-            font-size: 30px;
-          }
-          &-price {
-            font-size: 24px;
-            display: block;
-          }
-        }
-        image, img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-  }
-  .newgoods {
-    .newgoods-top {
-      margin-top: 20px;
-      height: 260px;
-      width: 100%;
-      background: url('../../asset/images/bgnew.png') no-repeat;
-      background-size: 100% 100%;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .top {
-        &-title {
-          color: #8c9bae;
-          font-size: 32px;
-        }
-        &-more {
-          display: block;
-          width: 180px;
-          height: 50px;
-          line-height: 50px;
-          margin: 27px auto 0 auto;
-          font-size: 22px;
-          background: #d8e4f0;
-          color: #8c9bae;
-        }
-      }
-    }
-    .list {
-      background: #fff;
-      // padding-bottom: 10px;
-      .scroll-view {
-        width: 100%; // height: 470px; // display: flex;
-        // flex-wrap: nowrap;
-        white-space: nowrap;
-        .newGoods-item {
-          width: 280px;
-          height: 416px;
-          padding: 5px 25px 0 25px;
-          display: inline-block;
-          overflow: hidden;
-          text-overflow:ellipsis;
-          white-space: nowrap;
-          image, img {
-            width: 280px;
-            height: 280px;
-          }
-          &-text {
+        height: 417px;
+        .swiper-container {
             width: 100%;
-            display: block;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            text-indent: 1em;
-            &:not(:first-of-type) {
-              margin-top: 8px;
+            height: 100%;
+            .swiper-item {
+                width: 100%;
+                .slide-image {
+                    width: 100%;
+                }
             }
-          }
-          &-name {
-            font-size: 30px;
-            font-weight: bold;
-          }
-          &-brief {
-            color: #8a8a8a;
-            font-size: 24px;
-          }
-          .newGoods-item-price {
-            color: #9c3232;
-            font-size: 24px;
-          }
-          &:nth-child(n+2) {
-            border-left: 1px solid #f4f4f4;
-          }
         }
-      }
     }
-  }
-  .hotgoods {
-    .newgoods-top {
-      background: url('../../asset/images/bgtopic.png') no-repeat;
-      background-size: 100% 100%;
-      .top {
-        &-title {
-          color: #b1a279;
+    .channel {
+        display: flex;
+        padding: 20px 0;
+        background: #ffffff;
+        .channel-item {
+            width: 25%;
+            text-align: center;
+            .channel-name {
+                font-size: 28px;
+                display: block;
+            }
+            image,
+            img {
+                height: 56px;
+                width: 56px;
+                display: inline-block;
+            }
         }
-        &-more {
-          background: #bcf4d1;
-          color: #b1a279;
+    }
+    .brand {
+        width: 100%;
+        margin-top: 20px;
+        background: #ffffff;
+        .head {
+            text-align: center;
+            padding: 40px 0;
         }
-      }
-    }
-  }
-  .topicList {
-    margin-top: 20px;
-    background: #fff;
-    .topicList-top {
-      text-align: center;
-      padding: 36px;
-      vertical-align: middle;
-      .icon {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        margin-left: 5px;
-        background: url('../../asset/images/right.png') no-repeat;
-        background-size: 100% 100%;
-        vertical-align: middle;
-      }
-    }
-    .list {
-      .scroll-view {
-        white-space: nowrap;
-        .scroll-view-item {
-          display: inline-block;
-          width: 575px;
-          margin-left: 25px;
-          &:last-of-type {
-            margin-right: 25px;
-          }
-          image, img {
-            display: block;
-            width: 575px;
-            height: 325px;
-            border-radius: 10px;
-          }
-          .btom {
+        .content {
+            width: 730px;
+            margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            margin-bottom: 42px;
+            flex-wrap: wrap;
+            .brand-item {
+                width: 360px;
+                height: 235px;
+                margin-bottom: 10px;
+                position: relative;
+                &-text {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px;
+                    &-name {
+                        font-size: 30px;
+                    }
+                    &-price {
+                        font-size: 24px;
+                        display: block;
+                    }
+                }
+                image,
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .newgoods {
+        .newgoods-top {
+            margin-top: 20px;
+            height: 260px;
             width: 100%;
-            &-item {
-              width: 90%;
-              &-title, &-subtitle {
-                display: block;
-                margin-top: 8px;
-              }
-              &-title {
-                font-size: 30px;
-                font-weight: bold;
-              }
-              &-subtitle {
-                width: 90%;
-                color: #8a8a8a;
-                font-size: 24px;
-                overflow: hidden;
-                text-overflow: ellipsis;
+            background: url('../../asset/images/bgnew.png') no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .top {
+                &-title {
+                    color: #8c9bae;
+                    font-size: 32px;
+                }
+                &-more {
+                    display: block;
+                    width: 180px;
+                    height: 50px;
+                    line-height: 50px;
+                    margin: 27px auto 0 auto;
+                    font-size: 22px;
+                    background: #d8e4f0;
+                    color: #8c9bae;
+                }
+            }
+        }
+        .list {
+            background: #fff; // padding-bottom: 10px;
+            .scroll-view {
+                width: 100%; // height: 470px; // display: flex;
+                // flex-wrap: nowrap;
                 white-space: nowrap;
-              }
+                .newGoods-item {
+                    width: 280px;
+                    height: 416px;
+                    padding: 5px 25px 0 25px;
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    image,
+                    img {
+                        width: 280px;
+                        height: 280px;
+                    }
+                    &-text {
+                        width: 100%;
+                        display: block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        text-indent: 1em;
+                        &:not(:first-of-type) {
+                            margin-top: 8px;
+                        }
+                    }
+                    &-name {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    &-brief {
+                        color: #8a8a8a;
+                        font-size: 24px;
+                    }
+                    .newGoods-item-price {
+                        color: #9c3232;
+                        font-size: 24px;
+                    }
+                    &:nth-child(n+2) {
+                        border-left: 1px solid #f4f4f4;
+                    }
+                }
             }
-            &-price {
-              margin-top: 8px;
-              color: #9c3232;
-              font-size: 24px;
+        }
+    }
+    .hotgoods {
+        .newgoods-top {
+            background: url('../../asset/images/bgtopic.png') no-repeat;
+            background-size: 100% 100%;
+            .top {
+                &-title {
+                    color: #b1a279;
+                }
+                &-more {
+                    background: #bcf4d1;
+                    color: #b1a279;
+                }
             }
-          }
-          // &:last-child {
-          //   margin-right: 25px;
-          // }
         }
-      }
     }
-  }
-  .new-category {
-    margin-top: 20px;
-    .head {
-      font-size: 32px;
-      padding: 25px 0;
-      text-align: center;
-    }
-    .sublist {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 100%;
-      margin: 0 auto;
-      &-item {
-        width: 360px;
-        height: 400px;
+    .topicList {
+        margin-top: 20px;
         background: #fff;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        &:nth-child(2n) {
-          margin-right: 20px;
+        .topicList-top {
+            text-align: center;
+            padding: 36px;
+            vertical-align: middle;
+            .icon {
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin-left: 5px;
+                background: url('../../asset/images/right.png') no-repeat;
+                background-size: 100% 100%;
+                vertical-align: middle;
+            }
         }
-        image, img {
-          display: block;
-          width: 302px;
-          height: 302px;
-          margin: 0 auto;
+        .list {
+            .scroll-view {
+                white-space: nowrap;
+                .scroll-view-item {
+                    display: inline-block;
+                    width: 575px;
+                    margin-left: 25px;
+                    &:last-of-type {
+                        margin-right: 25px;
+                    }
+                    image,
+                    img {
+                        display: block;
+                        width: 575px;
+                        height: 325px;
+                        border-radius: 10px;
+                    }
+                    .btom {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 42px;
+                        width: 100%;
+                        &-item {
+                            width: 90%;
+                            &-title,
+                            &-subtitle {
+                                display: block;
+                                margin-top: 8px;
+                            }
+                            &-title {
+                                font-size: 30px;
+                                font-weight: bold;
+                            }
+                            &-subtitle {
+                                width: 90%;
+                                color: #8a8a8a;
+                                font-size: 24px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                        }
+                        &-price {
+                            margin-top: 8px;
+                            color: #9c3232;
+                            font-size: 24px;
+                        }
+                    } // &:last-child {
+                    //   margin-right: 25px;
+                    // }
+                }
+            }
         }
-        &-name,&-price {
-          display: block;
-          font-size: 28px;
-          margin-bottom: 5px;
-          text-indent: 1rem;
-        }
-        &-name {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          width: 98%;
-        }
-        &-price {
-          color: #9c3232;
-        }
-      }
-      .last {
-        display: block;
-        width: 360px;
-        height: 410px;
-        margin-right: 20px;
-        // margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        background: #fff;
-        &-title {
-          height: 33px;
-          width: 100%;
-          line-height: 33px;
-          color: #333;
-          font-size: 33px;
-          text-align: center;
-        }
-        .icon {
-          display: inline-block;
-          width: 70px;
-          height: 70px;
-          background: url('../../asset/images/rightbig.png') no-repeat;
-          background-size: 100% 100%;
-          margin-top: 60px;
-        }
-      }
-      &:nth-child(2n) {
-        margin-left: 10px;
-      }
     }
-  }
+    .new-category {
+        margin-top: 20px;
+        .head {
+            font-size: 32px;
+            padding: 25px 0;
+            text-align: center;
+        }
+        .sublist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            margin: 0 auto;
+            &-item {
+                width: 48%;
+                height: 400px;
+                background: #fff;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                &:nth-child(2n) {
+                    margin-right: 20px;
+                }
+                image,
+                img {
+                    display: block;
+                    width: 302px;
+                    height: 302px;
+                    margin: 0 auto;
+                }
+                &-name,
+                &-price {
+                    display: block;
+                    font-size: 28px;
+                    margin-bottom: 5px;
+                    text-indent: 1rem;
+                }
+                &-name {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 98%;
+                }
+                &-price {
+                    color: #9c3232;
+                }
+            }
+            .last {
+                display: block;
+                width: 48%;
+                margin-right: 20px; // margin: 0 auto;
+                &-content {
+                    height: 410px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background: #fff;
+                }
+                &-title {
+                    height: 33px;
+                    width: 100%;
+                    line-height: 33px;
+                    color: #333;
+                    font-size: 33px;
+                    text-align: center;
+                }
+                .icon {
+                    display: inline-block;
+                    width: 70px;
+                    height: 70px;
+                    background: url('../../asset/images/rightbig.png') no-repeat;
+                    background-size: 100% 100%;
+                    margin-top: 60px;
+                }
+            }
+            &:nth-child(2n) {
+                margin-left: 10px;
+            }
+        }
+    }
 }

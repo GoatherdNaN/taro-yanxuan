@@ -147,7 +147,11 @@ class Search extends Component {
         listData
       }
     } = this.props;
-    const { words, nowIndex } = this.state;
+    const {
+      words,
+      nowIndex,
+      order
+    } = this.state;
     return (
       <View className='search'>
         <View className='head'>
@@ -156,7 +160,7 @@ class Search extends Component {
             <Input
               focus
               type='text'
-              // value={words}
+              value={words}
               className='search-input'
               confirmType='search'
               onFocus={this.inputFocus}
@@ -227,7 +231,7 @@ class Search extends Component {
           </View>
           <View className='cont'>
             {
-              hotData.map((item,index) => (
+              hotData && !!hotData.length && hotData.map((item, index) => (
                 <View
                   key={item.id}
                   className={index ? '' : 'active'}
@@ -265,7 +269,7 @@ class Search extends Component {
                       className={`item${listData.length % 2 ? ' none' : ' active'}`}
                     >
                       <Image src={item.list_pic_url} alt='' />
-                      <Text className='name' className='name'>{item.name}</Text>
+                      <Text className='name'>{item.name}</Text>
                       <Text className='price'>￥{item.retail_price}</Text>
                     </View>
                   ))
