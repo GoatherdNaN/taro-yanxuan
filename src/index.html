@@ -15,5 +15,8 @@
 </head>
 <body>
   <div id="app"></div>
+  <script type="text/javascript">
+    var handle=function(){var u=navigator.userAgent;var isMobile=u.indexOf("Mobile")>-1||u.indexOf("Android")>-1||u.indexOf("Linux")>-1;var rootDom=document.getElementById("app");var viewHeight=document.documentElement.clientHeight||document.body.clientHeight;if(!isMobile){const rootWidth=viewHeight/16*9>500?viewHeight/16*9:500;rootDom.style.position="absolute";rootDom.style.left="50%";rootDom.style.marginLeft=-viewHeight/32*9+"px";rootDom.style.width=rootWidth+"px"}else{rootDom.style.position="static";rootDom.style.width="100%"}};window.addEventListener("resize",handle);window.addEventListener("load",handle);
+	</script>
 </body>
 </html>

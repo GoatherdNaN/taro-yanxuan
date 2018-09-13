@@ -261,7 +261,7 @@ export default class Toptic extends Component {
         }
         {
           isH5 && (
-            <div className='detail-h5' dangerouslySetInnerHTML={{__html: goods_desc}}></div>
+            <div className='detail' dangerouslySetInnerHTML={{__html: goods_desc}}></div>
           )
         }
         <View className='common-problem'>
