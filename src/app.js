@@ -45,28 +45,22 @@ class App extends Component {
           text: '首页'
         },
         {
-          'pagePath': 'pages/topic/index',
-          'iconPath': './asset/images/ic_menu_topic_nor.png',
-          'selectedIconPath': './asset/images/ic_menu_topic_pressed.png',
-          'text': '专题'
+          pagePath: 'pages/topic/index',
+          iconPath: './asset/images/ic_menu_topic_nor.png',
+          selectedIconPath: './asset/images/ic_menu_topic_pressed.png',
+          text: '专题'
         },
         {
-          'pagePath': 'pages/category/index',
-          'iconPath': './asset/images/ic_menu_sort_nor.png',
-          'selectedIconPath': './asset/images/ic_menu_sort_pressed.png',
-          'text': '分类'
+          pagePath: 'pages/category/index',
+          iconPath: './asset/images/ic_menu_sort_nor.png',
+          selectedIconPath: './asset/images/ic_menu_sort_pressed.png',
+          text: '分类'
         },
-        // {
-        //   'pagePath': 'pages/cart/main',
-        //   'iconPath': './asset/images/ic_menu_shoping_nor.png',
-        //   'selectedIconPath': './asset/images/ic_menu_shoping_pressed.png',
-        //   'text': '购物车'
-        // },
         {
-          'pagePath': 'pages/mine/index',
-          'iconPath': './asset/images/ic_menu_me_nor.png',
-          'selectedIconPath': './asset/images/ic_menu_me_pressed.png',
-          'text': '我的'
+          pagePath: 'pages/mine/index',
+          iconPath: './asset/images/ic_menu_me_nor.png',
+          selectedIconPath: './asset/images/ic_menu_me_pressed.png',
+          text: '我的'
         }
       ]
     }

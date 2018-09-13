@@ -4,11 +4,12 @@ import { View, Swiper, SwiperItem, Text, Image, RichText, Input } from '@tarojs/
 
 import { isWeapp, isH5 } from '../../constants/env'
 import SERVER from '../../utils/request'
-// import WxParse from '../../components/wxParse/wxParse'
 import { toLogin, login, getStorageOpenid } from '../../utils'
 import { setGoodsDetail, asyncSubmitAction, asyncAddCollect, asyncAddCart } from '../../actions/goods'
 import shoppingCarNor from '../../asset/images/ic_menu_shoping_nor.png';
 import './index.less'
+const WxParse = isWeapp ? require('../../components/wxParse/wxParse') : {};
+
 
 @connect(({ goods }) => ({
   goods

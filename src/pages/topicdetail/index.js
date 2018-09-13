@@ -4,10 +4,10 @@ import { connect } from '@tarojs/redux'
 
 import { isWeapp, isH5 } from '../../constants/env'
 import SERVER from '../../utils/request'
-import WxParse from '../../components/wxParse/wxParse'
 import { setTopicDetail } from '../../actions/topicDetail'
 
 import './index.less'
+const WxParse = isWeapp ? require('../../components/wxParse/wxParse') : {};
 
 @connect(({ topicDetail }) => ({
   topicDetail

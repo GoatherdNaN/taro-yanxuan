@@ -114,7 +114,7 @@ class Index extends Component {
               >
                 <Image src={item.icon_url} alt='' />
                 {/* 下面是数据错误，这里转换一下 */}
-                <Text class='channel-name'>{item.name === '服装' ? '饮食' : item.name}</Text>
+                <Text className='channel-name'>{item.name === '服装' ? '饮食' : item.name}</Text>
               </View>
             ))
           }
@@ -127,11 +127,11 @@ class Index extends Component {
             {
               brandList.map((item, index) => (
                 <View className='brand-item' key={`brandList${index}`} onClick={this.brandDetail.bind(this,item.id)}>
+                  <Image src={item.new_pic_url} alt='' />
                   <View className='brand-item-text'>
                     <Text className='brand-item-text-name'>{item.name}</Text>
                     <Text className='brand-item-text-price'>{item.floor_price}元起</Text>
                   </View>
-                  <Image src={item.new_pic_url} alt='' />
                 </View>
               ))
             }
@@ -150,9 +150,9 @@ class Index extends Component {
                 newGoods.map((item, index) => (
                   <View key={`newGoods${index}`} className='newGoods-item' onClick={this.goodsDetail.bind(this,item.id)}>
                     <Image src={item.list_pic_url} alt='' />
-                    <Text class='newGoods-item-text newGoods-item-name'>{item.name}</Text>
-                    <Text class='newGoods-item-text newGoods-item-brief'>{item.goods_brief}</Text>
-                    <Text class='newGoods-item-text newGoods-item-price'>￥{item.retail_price}</Text>
+                    <Text className='newGoods-item-text newGoods-item-name'>{item.name}</Text>
+                    <Text className='newGoods-item-text newGoods-item-brief'>{item.goods_brief}</Text>
+                    <Text className='newGoods-item-text newGoods-item-price'>￥{item.retail_price}</Text>
                   </View>
                 ))
               }
@@ -173,9 +173,9 @@ class Index extends Component {
                 hotGoods.map((item, index) => (
                   <View key={`newGoods${index}`} className='newGoods-item' onClick={this.goodsDetail.bind(this,item.id)}>
                     <Image src={item.list_pic_url} alt='' />
-                    <Text class='newGoods-item-text newGoods-item-name'>{item.name}</Text>
-                    <Text class='newGoods-item-text newGoods-item-brief'>{item.goods_brief}</Text>
-                    <Text class='newGoods-item-text newGoods-item-price'>￥{item.retail_price}</Text>
+                    <Text className='newGoods-item-text newGoods-item-name'>{item.name}</Text>
+                    <Text className='newGoods-item-text newGoods-item-brief'>{item.goods_brief}</Text>
+                    <Text className='newGoods-item-text newGoods-item-price'>￥{item.retail_price}</Text>
                   </View>
                 ))
               }
@@ -194,7 +194,7 @@ class Index extends Component {
                   <View key={`topicList${index}`} className='scroll-view-item' onClick={this.topicDetail.bind(this,item.id)}>
                     <Image src={item.item_pic_url} alt='' />
                     <View className='btom'>
-                      <View class='btom-item'>
+                      <View className='btom-item'>
                         <Text className='btom-item-title'>{item.title}</Text>
                         <Text className='btom-item-subtitle'>{item.subtitle}</Text>
                       </View>
@@ -228,7 +228,7 @@ class Index extends Component {
                   <View onClick={this.categoryList.bind(this,item.id)}>
                     <View className='last'>
                       <Text className='last-title'>{item.name}好物</Text>
-                      <span className='icon'></span>
+                      <View className='icon'></View>
                     </View>
                   </View>
                 </View>
